@@ -1,1 +1,10 @@
-key: "value"
+TrainingArguments:
+  num_train_epochs: 1                      # Number of times to loop over the entire dataset during training
+  warmup_steps: 500                        # Number of warmup steps for learning rate scheduler
+  per_device_train_batch_size: 1          # Batch size per device (GPU/CPU) during training 
+  weight_decay: 0.01                      # L2 weight decay for regularization 
+  logging_steps: 10                        # Log training metrics every 10 steps
+  evaluation_strategy: steps              # Evaluate every N steps 
+  eval_steps: 500                         # Run evaluation every 500 steps
+  save_steps: 1000000                     # Save model every 1,000,000 steps 
+  gradient_accumulation_steps: 16         # Accumulate gradients over 16 steps before backpropagation
