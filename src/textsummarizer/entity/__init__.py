@@ -29,5 +29,13 @@ class ModelTrainigCinfig:
     save_steps: float                     # Save model every 1,000,000 steps 
     gradient_accumulation_steps: int      # Accumulate gradients over 16 steps before backpropagation
     
+
+@dataclass(frozen=True)
+class ModelEvaluationConfig:
+    root_dir: Path
+    data_path: Path
+    model_path: Path
+    tokenizer_path: Path
+    metric_file_name: Path
     
     
