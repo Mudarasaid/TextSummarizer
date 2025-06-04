@@ -35,3 +35,73 @@
 [2025-05-28 16:31:14,175: INFO: common:created directory at: artifacts/data_ingestion]
 [2025-05-28 16:31:15,498: INFO: data_ingestion:file is downloaded]
 [2025-05-28 16:31:15,745: INFO: main:stage Data Ingestion stage completed]
+[2025-05-28 16:52:40,882: INFO: config:PyTorch version 2.7.0 available.]
+[2025-05-28 16:52:55,776: INFO: common:yaml file<_io.TextIOWrapper name='config\\config.yaml' mode='r' encoding='UTF-8'> loaded successfully]
+[2025-05-28 16:52:55,824: INFO: common:yaml file<_io.TextIOWrapper name='params.yaml' mode='r' encoding='UTF-8'> loaded successfully]
+[2025-05-28 16:52:55,837: INFO: common:created directory at: artifacts]
+[2025-05-28 16:52:55,839: INFO: common:created directory at: artifacts/data_transformation]
+[2025-06-04 11:16:27,784: INFO: config:PyTorch version 2.7.0 available.]
+[2025-06-04 11:18:07,311: INFO: common:yaml file<_io.TextIOWrapper name='config\\config.yaml' mode='r' encoding='UTF-8'> loaded successfully]
+[2025-06-04 11:18:07,516: INFO: common:yaml file<_io.TextIOWrapper name='params.yaml' mode='r' encoding='UTF-8'> loaded successfully]
+[2025-06-04 11:18:07,545: INFO: common:created directory at: artifacts]
+[2025-06-04 11:18:07,560: INFO: common:created directory at: artifacts/data_transformation]
+[2025-06-04 11:25:16,955: INFO: common:yaml file<_io.TextIOWrapper name='config\\config.yaml' mode='r' encoding='UTF-8'> loaded successfully]
+[2025-06-04 11:25:17,006: INFO: common:yaml file<_io.TextIOWrapper name='params.yaml' mode='r' encoding='UTF-8'> loaded successfully]
+[2025-06-04 11:25:17,009: INFO: common:created directory at: artifacts]
+[2025-06-04 11:25:17,015: INFO: common:created directory at: artifacts/data_transformation]
+[2025-06-04 11:43:09,345: INFO: config:PyTorch version 2.7.0 available.]
+[2025-06-04 11:43:10,238: INFO: main:stage Data Ingestion stage initiated]
+[2025-06-04 11:43:10,243: INFO: common:yaml file<_io.TextIOWrapper name='config\\config.yaml' mode='r' encoding='cp1252'> loaded successfully]
+[2025-06-04 11:43:10,248: INFO: common:yaml file<_io.TextIOWrapper name='params.yaml' mode='r' encoding='cp1252'> loaded successfully]
+[2025-06-04 11:43:10,250: INFO: common:created directory at: artifacts]
+[2025-06-04 11:43:10,250: INFO: common:created directory at: artifacts/data_ingestion]
+[2025-06-04 11:43:10,251: INFO: data_ingestion:file already exist]
+[2025-06-04 11:43:10,601: INFO: main:stage Data Ingestion stage completed]
+[2025-06-04 11:43:10,602: INFO: main:stage Data Transformation stage initiated]
+[2025-06-04 11:43:10,606: INFO: common:yaml file<_io.TextIOWrapper name='config\\config.yaml' mode='r' encoding='cp1252'> loaded successfully]
+[2025-06-04 11:43:10,607: INFO: common:yaml file<_io.TextIOWrapper name='params.yaml' mode='r' encoding='cp1252'> loaded successfully]
+[2025-06-04 11:43:10,608: INFO: common:created directory at: artifacts]
+[2025-06-04 11:43:10,610: INFO: common:created directory at: artifacts/data_ingestion]
+[2025-06-04 11:43:10,610: ERROR: main:'DataIngestionConfig' object has no attribute 'tokenizer_name']
+Traceback (most recent call last):
+  File "C:\Users\mouda\OneDrive\EndToEnd Projects\TextSummarizer\main.py", line 20, in <module>
+    data_transformation_pipeline.initiate_data_Transformation()
+  File "C:\Users\mouda\OneDrive\EndToEnd Projects\TextSummarizer\src\textsummarizer\pipeline\data_transformation_pipeline.py", line 11, in initiate_data_Transformation
+    data_transformation= DataTransformation(config=data_transformation_config)
+  File "C:\Users\mouda\OneDrive\EndToEnd Projects\TextSummarizer\src\textsummarizer\components\data_transformation.py", line 15, in __init__
+    self.tokenizer=AutoTokenizer.from_pretrained(config.tokenizer_name)
+AttributeError: 'DataIngestionConfig' object has no attribute 'tokenizer_name'
+[2025-06-04 11:48:33,856: INFO: config:PyTorch version 2.7.0 available.]
+[2025-06-04 11:48:34,567: INFO: main:stage Data Ingestion stage initiated]
+[2025-06-04 11:48:34,571: INFO: common:yaml file<_io.TextIOWrapper name='config\\config.yaml' mode='r' encoding='cp1252'> loaded successfully]
+[2025-06-04 11:48:34,575: INFO: common:yaml file<_io.TextIOWrapper name='params.yaml' mode='r' encoding='cp1252'> loaded successfully]
+[2025-06-04 11:48:34,577: INFO: common:created directory at: artifacts]
+[2025-06-04 11:48:34,577: INFO: common:created directory at: artifacts/data_ingestion]
+[2025-06-04 11:48:34,578: INFO: data_ingestion:file already exist]
+[2025-06-04 11:48:34,727: INFO: main:stage Data Ingestion stage completed]
+[2025-06-04 11:48:34,728: INFO: main:stage Data Transformation stage initiated]
+[2025-06-04 11:48:34,732: INFO: common:yaml file<_io.TextIOWrapper name='config\\config.yaml' mode='r' encoding='cp1252'> loaded successfully]
+[2025-06-04 11:48:34,733: INFO: common:yaml file<_io.TextIOWrapper name='params.yaml' mode='r' encoding='cp1252'> loaded successfully]
+[2025-06-04 11:48:34,733: INFO: common:created directory at: artifacts]
+[2025-06-04 11:48:34,734: INFO: common:created directory at: artifacts/data_transformation]
+[2025-06-04 11:48:37,619: ERROR: main:DataTransformation.convert_examples_to_features() missing 1 required positional argument: 'example_batch']
+Traceback (most recent call last):
+  File "C:\Users\mouda\OneDrive\EndToEnd Projects\TextSummarizer\main.py", line 20, in <module>
+    data_transformation_pipeline.initiate_data_Transformation()
+  File "C:\Users\mouda\OneDrive\EndToEnd Projects\TextSummarizer\src\textsummarizer\pipeline\data_transformation_pipeline.py", line 12, in initiate_data_Transformation
+    data_transformation.convert_examples_to_features()
+TypeError: DataTransformation.convert_examples_to_features() missing 1 required positional argument: 'example_batch'
+[2025-06-04 11:53:12,641: INFO: config:PyTorch version 2.7.0 available.]
+[2025-06-04 11:53:13,460: INFO: main:stage Data Ingestion stage initiated]
+[2025-06-04 11:53:13,465: INFO: common:yaml file<_io.TextIOWrapper name='config\\config.yaml' mode='r' encoding='cp1252'> loaded successfully]
+[2025-06-04 11:53:13,470: INFO: common:yaml file<_io.TextIOWrapper name='params.yaml' mode='r' encoding='cp1252'> loaded successfully]
+[2025-06-04 11:53:13,471: INFO: common:created directory at: artifacts]
+[2025-06-04 11:53:13,472: INFO: common:created directory at: artifacts/data_ingestion]
+[2025-06-04 11:53:13,473: INFO: data_ingestion:file already exist]
+[2025-06-04 11:53:13,669: INFO: main:stage Data Ingestion stage completed]
+[2025-06-04 11:53:13,670: INFO: main:stage Data Transformation stage initiated]
+[2025-06-04 11:53:13,676: INFO: common:yaml file<_io.TextIOWrapper name='config\\config.yaml' mode='r' encoding='cp1252'> loaded successfully]
+[2025-06-04 11:53:13,679: INFO: common:yaml file<_io.TextIOWrapper name='params.yaml' mode='r' encoding='cp1252'> loaded successfully]
+[2025-06-04 11:53:13,680: INFO: common:created directory at: artifacts]
+[2025-06-04 11:53:13,681: INFO: common:created directory at: artifacts/data_transformation]
+[2025-06-04 11:53:23,001: INFO: main:stage Data Transformation stage completed]
